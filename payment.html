@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Rental car Booking</title>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+
+<body>
+    <div id="nav-placeholder"></div>
+    <container>
+        <div class="row justify-content-center">
+            <div class="col-5">
+                <div class="row">
+                    <div class="col">
+                        <br><br><br><br><br><br><br><br>
+                        <p class="h1 text-center">Order Summary</p><br>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-8">
+                        <p>Order reference: 1234154443</p><br>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-6">
+                        <p>Ford Mustang Shelby gt500</p><br>
+                    </div>
+                    <div class="col-2 text-end">
+                        <p>$2500.00</p>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-4">
+                        <p>Tax</p>
+                    </div>
+                    <div class="col-4 text-end">
+                        <p>$168.00</p>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-4">
+                        <h3>Total</h3>
+                    </div>
+                    <div class="col-4 text-end">
+                        <h3>$2568.00</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col-5">
+                <br><br><br><br><br><br><br>
+                <p class="h1 text-center">How would you like to pay?</p><br>
+                <form class="container needs-validation" novalidate action="../php/register.php" method="POST">
+                    <div class="row justify-content-center">
+                        <div class="col-5 ">
+                            <div class="form-group">
+                                <label for="first">First Name</label>
+                                <input type="text" class="form-control" id="first" placeholder="First name" name="firstname" required>
+                                <div class="invalid-feedback">
+                                    Please enter your first name.</div>
+                            </div>
+                        </div>
+                        <div class="col-5">
+                            <div class="form-group">
+                                <label for="last">Last name</label>
+                                <input type="text" class="form-control" id="last" placeholder="Last name" name="lastname" required>
+                                <div class="invalid-feedback">
+                                    Please enter your last name.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-10">
+                            <div class="form-group">
+                                <label for="emailAddress">Card Number</label>
+                                <input type="text" class="form-control" id="emailAddress" placeholder="Card Number" name="email" required>
+                                <div class="invalid-feedback">
+                                    Please enter a valid email address.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-5 ">
+                            <div class="form-group">
+                                <label for="first">CVV</label>
+                                <input type="text" class="form-control" id="first" placeholder="CVV" name="firstname" required>
+                                <div class="invalid-feedback">
+                                    Please enter your first name.</div>
+                            </div>
+                        </div>
+                        <div class="col-5">
+                            <div class="form-group">
+                                <label for="last">Expiry Date</label>
+                                <input type="text" class="form-control" id="last" placeholder="MM/YY" name="lastname" required>
+                                <div class="invalid-feedback">
+                                    Please enter your last name.</div>
+                            </div>
+                        </div>
+                    </div><br>
+                    <div class="row justify-content-center">
+                        <div class="col-4 form-group text-center">
+                            <br><button type="submit" class="btn btn-primary">Submit</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+        <!-- <div class="row justify-content-center">
+            <div class="col-4">
+                <h3 class="text-left">Total</h3>
+            </div>
+            <div class="col-4">
+                <h4 class="text-right">$2543.83</h4>
+            </div>
+        </div> -->
+
+        <script>
+            $(function() {
+                $("#nav-placeholder").load("nav.html");
+            });
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
+
+
+</html>
